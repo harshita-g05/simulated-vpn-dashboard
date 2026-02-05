@@ -4,7 +4,7 @@ import socket #load networking module (creates tcp/udp connections)
 from cryptography.fernet import Fernet
 
 # Load thr same shared key as server
-with open("key.key", "rb") as f:
+with open("backend/key.key", "rb") as f:
     key = f.read()
 fernet = Fernet(key)
 
